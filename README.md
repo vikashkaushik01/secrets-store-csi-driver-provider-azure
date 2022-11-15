@@ -58,13 +58,13 @@ secretproviderclasspodstatuses.secrets-store.csi.x-k8s.io
 For linux nodes
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/Azure/secrets-store-csi-driver-provider-azure/master/deployment/provider-azure-installer.yaml
+kubectl apply -f key_vault_provider_yaml/provider-azure-installer.yaml
 ```
 
 For windows nodes
 
 ```
-kubectl apply -f https://raw.githubusercontent.com/Azure/secrets-store-csi-driver-provider-azure/master/deployment/provider-azure-installer-windows.yaml
+kubectl apply -f key_vault_provider_yaml/provider-azure-installer-windows.yaml
 ```
 
 To validate the provider's installer is running as expected, run the following commands:
