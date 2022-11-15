@@ -1,6 +1,7 @@
 # Install the Secrets Store CSI Driver
 
-###### secrets-store-csi-driver-provider-azure
+Secrets-store-csi-driver-provider-azure
+
  ```
  kubectl apply -f csi_driver_yamls/rbac-secretproviderclass.yaml
  kubectl apply -f csi_driver_yamls/csidriver.yaml
