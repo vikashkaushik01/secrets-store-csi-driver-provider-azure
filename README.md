@@ -30,9 +30,10 @@ To validate the installer is running as expected, run the following commands:
 > kubectl get po --namespace=kube-system
 You should see the Secrets Store CSI driver pods running on each agent node:
 
-
+```
 csi-secrets-store-qp9r8         3/3     Running   0          4m
 csi-secrets-store-zrjt2         3/3     Running   0          4m
+```
 You should see the following CRDs deployed:
 
 
