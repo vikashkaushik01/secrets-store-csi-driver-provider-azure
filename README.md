@@ -11,6 +11,7 @@
 
 If using the driver to sync secrets-store content as Kubernetes Secrets, csi_driver_yamls the additional RBAC permissions
 required to enable this feature
+
 ``` kubectl apply -f csi_driver_yamls/rbac-secretprovidersyncing.yaml ```
 
 If using the secret rotation feature, csi_driver_yamls the additional RBAC permissions
@@ -20,14 +21,15 @@ required to enable this feature
 
 If using the CSI Driver token requests feature (https://kubernetes-csi.github.io/docs/token-requests.html) to use
 pod/workload identity to request a token and use with providers
+
 ``` kubectl apply -f csi_driver_yamls/rbac-secretprovidertokenrequest.yaml ```
 
 
 [OPTIONAL] To csi_driver_yamls driver on windows nodes
+
 ``` kubectl apply -f csi_driver_yamls/secrets-store-csi-driver-windows.yaml ```
 
 To validate the installer is running as expected, run the following commands:
-
 
 ``` kubectl get po --namespace=kube-system ```
 
